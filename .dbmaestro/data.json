@@ -5,7 +5,25 @@
         "ProjectId": "5e4d9cae-b5cd-43a3-a03b-61851a6418c2",
         "ProjectName": "demo_proj",
         "DBTypeName": "SQL Server",
-        "Environments": null,
+        "Environments": [
+          {
+            "EnvironmentId": "a501266a-5455-4129-889e-1183490801b4",
+            "EnvironmentName": "Dev_Env_1",
+            "EnvironmentType": "DEV",
+            "Databases": [
+              {
+                "DatabaseId": "764bdd3b-1eac-4d74-9d4a-4c3232c413e4",
+                "DatabaseAliasName": "demo_db1",
+                "DatabaseConnectionDetails": null,
+                "RepositoryDetails": {
+                  "$type": "DOP.SourceControl.ExternalSourceControl.Git.Models.GitRepositoryDetails, DOP.SourceControl.ExternalSourceControl.Git",
+                  "RemoteRepositoryURL": "https://github.com/roylauzon/db_oct.git",
+                  "BranchName": "main"
+                }
+              }
+            ]
+          }
+        ],
         "SourceControlPathType": 0,
         "Configuration": {
           "BuildMigrationScriptAutomatically": true,
@@ -21,7 +39,24 @@
       "UserData": [
         {
           "UserName": "roylauzon",
-          "DatabasesData": []
+          "DatabasesData": [
+            {
+              "DatabaseId": "764bdd3b-1eac-4d74-9d4a-4c3232c413e4",
+              "DatabaseAliasName": "demo_db1",
+              "DatabaseConnectionDetails": {
+                "DBTypeName": "SQL Server",
+                "Host": "SOURCE-CONTROL-",
+                "AuthenticationType": 1,
+                "Username": "sc",
+                "Password": "Yzr0uK/x+JQXFiaQBoLS0A==",
+                "DatabaseName": "Demo_user1"
+              },
+              "RepositoryCredentials": {
+                "UserName": "roylauzon",
+                "Password": "ftPm7DV9mYIND7T90GVFTECq+9jSVLHWU6yCteJf16uBOWB++A01OdwLNBhRAHsD"
+              }
+            }
+          ]
         }
       ]
     }
